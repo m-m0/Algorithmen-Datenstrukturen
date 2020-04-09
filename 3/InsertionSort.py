@@ -1,9 +1,11 @@
+import random
+
 def main():
-    a = [2, 5, 1, 3, 6, 8, 5, 3, 2, 12, 54, 89]
+    a = [int(random.random()*100) for _ in xrange(50)]
     print(a)
     print(InsertionSortMin(a))
 
-# Sortierung über Maximum
+# Sortierung ueber Maximum
 def InsertionSortMax(a):
     j = 1
 
@@ -17,7 +19,7 @@ def InsertionSortMax(a):
         j += 1
     return a
 
-# Sortierung über Minimum
+# Sortierung ueber Minimum
 def InsertionSortMin(a):
     j = len(a) - 1
 

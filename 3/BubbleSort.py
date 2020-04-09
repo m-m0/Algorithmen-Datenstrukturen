@@ -1,10 +1,11 @@
-def main():
-    a = [12, 34, 12, 45, 2, 56, 2, 4, 6, 7]
-    print(a)
-    BubbleSortMax(a)
-    print(a)
+import random
 
-# minimum wandert nach vorne
+def main():
+    a = [int(random.random()*100) for _ in xrange(50)]
+    print(a)
+    print(BubbleSortMax(a))
+
+# Minimum wandert nach vorne
 def BubbleSortMin(a):
     i = 0
 
@@ -17,7 +18,7 @@ def BubbleSortMin(a):
         i += 1
     return a
 
-# maximum wandert nach hinten
+# Maximum wandert nach hinten
 def BubbleSortMax(a):
     i = len(a)
 
